@@ -23,7 +23,7 @@ int main(void)
 
 
 		//introduce small human observable delay
-		//This loop executes for 300K times
+		//This loop executes for 600K times
 		for(uint32_t i=0 ; i < 600000 ; i++ );
 
 		//Reset 13th and 14th bit of the output data register to make I/O pin-13 and pin-14 as LOW
