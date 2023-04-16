@@ -17,7 +17,7 @@ int main(void)
 
 	while(1)
 	{
-		//Set 13th and 14th bit of the output data register to make I/O pin-13 and pin-14 as HIGH
+		//Set 13th and 14th bit of the output data register to make I/O pin-13 and pin-14 (LOW or HIGH)
 		pPortGOutReg->pin_13  = 1;
 		pPortGOutReg->pin_14  = 0;
 
@@ -26,7 +26,7 @@ int main(void)
 		//This loop executes for 600K times
 		for(uint32_t i=0 ; i < 600000 ; i++ );
 
-		//Reset 13th and 14th bit of the output data register to make I/O pin-13 and pin-14 as LOW
+		//Reset 13th and 14th bit of the output data register to make I/O pin-13 and pin-14 (LOW or HIGH)
 		pPortGOutReg->pin_13  = 0;
 		pPortGOutReg->pin_14  = 1;
 
